@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+            <!---------------------------- Input Type Text ------------------------------------------>
+            <input type="text" id="name" placeholder="Enter Your Name" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <!---------------------------------- Input Type Email----------------------------------->
+            <input type="Email" id="Email" placeholder="Enter Your Email" />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+
+            <!------------------------------------------ Input Type Text ----------------------------->
+            <input type="text" id="Age" placeholder="Enter Your Age" />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+
+            <!----------------------------- Dropdown options --------------------------------->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Qualification ?
+            </label>
+
+            <!--------------------------- Input Checkbox Button -------------------------------->
+            <label for="recommed-1">
+                <label for="inp-1">
+                    <input type="checkbox" name="inp"> High School(10th)</input></label>
+                <label for="inp-2">
+                    <input type="checkbox" name="inp">Higher School(12th)</input></label>
+                <label for="inp-3">
+                    <input type="checkbox" name="inp">Graduation(Bachelors)</input></label>
+                <label for="inp-4">
+                    <input type="checkbox" name="inp">Post Graduation(Masters)</input></label>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Languages and Frameworks known
+                <small>(Check all that apply)</small>:-
+            </label>
+            <!------------------------------------ Input Type Checkbox ------------------------>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">HTML</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">CSS</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">JS (Java Script)</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Bootstrap</input></label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Mongo DB</input></label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">React JS</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Node JS</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Express JS</input></label>
+
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions:-
+            </label>
+
+            <!---------------------- multi-line text input control ---------------------------------->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+			</textarea>
+        </div>
+
+        <!---------------------------- Multi-line Text Input Control -------------------------------->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>
